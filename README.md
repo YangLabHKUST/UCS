@@ -2,8 +2,7 @@
 
 This repository contains the code for the UCS method, a unified approach to cell segmentation for spatially resolved transcriptomics. UCS is a deep learning-based method that can be used to segment cells in spatially resolved transcriptomics data. UCS is based on a U-Net architecture and is trained on a dataset of spatially resolved transcriptomics images. UCS can be used to segment cells in spatially resolved transcriptomics data from different platforms.
 
-<img src="https://chenyhvvvv.github.io/ucs/workflow.png" width="1000px"/>
-
+![Workflow](workflow.png)
 
 ## Installation
 
