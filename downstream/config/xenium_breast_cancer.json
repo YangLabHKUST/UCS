@@ -1,0 +1,23 @@
+{
+  "gene_map": "./paper_data/materials_xenium_breast_cancer/gene_map.tif",
+  "gene_names": "./paper_data/materials_xenium_breast_cancer/gene_names.txt",
+  "he": "./paper_data/materials_xenium_breast_cancer/he.tif",
+  "dapi": "./paper_data/materials_xenium_breast_cancer/dapi.tif",
+
+  "segmentation_results": {
+    "UCS_10X": "./paper_data/segmentation_xenium_breast_cancer/UCS_10X.tif",
+    "UCS_Cellpose": "./paper_data/segmentation_xenium_breast_cancer/UCS_Cellpose.tif",
+    "UCS SM+Marker": "./paper_data/segmentation_xenium_breast_cancer/UCS_SM_Marker.tif",
+    "BIDCell": "./paper_data/segmentation_xenium_breast_cancer/BIDCell.tif",
+    "Baysor": "./paper_data/segmentation_xenium_breast_cancer/Baysor.tif",
+    "Cell_10X": "./paper_data/segmentation_xenium_breast_cancer/Cell_10X.tif",
+    "Nuclei_10X": "./paper_data/segmentation_xenium_breast_cancer/Nuclei_10X.tif",
+    "Nuclei_Cellpose": "./paper_data/segmentation_xenium_breast_cancer/Cellpose.tif"
+  },
+  "celltype_csv": "./paper_data/materials_xenium_breast_cancer/Cell_Barcode_Type_Matrices.xlsx",
+  "scRNA_ref": "./paper_data/materials_xenium_breast_cancer/Chromium_FFPE_Human_Breast_Cancer_Chromium_FFPE_Human_Breast_Cancer_count_sample_filtered_feature_bc_matrix.h5",
+  "pos_gene_csv": "./paper_data/materials_xenium_breast_cancer/sc_breast_markers_pos.csv",
+  "reload_results": [],
+
+  "output_dir": "./paper_data/downstream_xenium_breast_cancer/"
+}

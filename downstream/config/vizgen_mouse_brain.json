@@ -1,0 +1,11 @@
+{
+  "gene_map": "./paper_data/visualized_vizgen/gene_map.tif",
+  "dapi": "./paper_data/visualized_vizgen/mosaic_DAPI_mip_resized.tif",
+
+  "segmentation_results": {
+    "UCS_Vizgen": "./paper_data/visualized_vizgen/segmentation_mask.tif",
+    "UCS_Cellpose": "./paper_data/visualized_vizgen/segmentation_mask_cellpose.tif",
+    "Nuclei_Cellpose": "./paper_data/visualized_vizgen/cellpose_segmentation.tif",
+    "Vizgen": "./paper_data/visualized_vizgen/cell_vizgen_mask.tif"
+  }
+}
