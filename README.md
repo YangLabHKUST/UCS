@@ -8,6 +8,14 @@ This repository contains the code for the UCS method, a unified approach to cell
 
 
 ## Run
+To prepare the environment:
+```bash
+cd /path/to/ucs
+conda create -n ucs python=3.9
+conda activate ucs
+pip install -r requirements.txt
+```
+Then you can run the UCS method on your data.
 See `scrips` dir for examples on how to run UCS on Xenium data and Vizgen data.
 
 
