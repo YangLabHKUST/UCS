@@ -4,7 +4,7 @@ import tifffile
 import os
 
 # Xenium Breast Cancer
-config = read_json_to_namespace("./config/xenium_breast_cancer.json")
+config = read_json_to_namespace("./downstream/config/xenium_breast_cancer.json")
 os.makedirs(config.output_dir, exist_ok=True)
 gene_map = tifffile.imread(config.gene_map)
 with open(config.gene_names, 'r') as f:
