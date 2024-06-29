@@ -1,4 +1,4 @@
-# UCS: a unified approach to cell segmentation for spatially resolved transcriptomics
+# UCS: a unified approach to cell segmentation for subcellular spatial transcriptomics
 
 This repository contains the code for the UCS method, a unified approach to cell segmentation for spatially resolved transcriptomics. UCS is a deep learning-based method that can be used to segment cells in spatially resolved transcriptomics data. UCS can be used to segment cells in spatially resolved transcriptomics data from different platforms.
 
