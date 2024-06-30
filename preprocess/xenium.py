@@ -69,7 +69,7 @@ def get_gene_map(args):
     gene_names_chunks = np.array_split(gene_names, n_processes)
     processes = []
     # Create temp dir
-    temp_dir = tempfile.mkdtemp()
+    temp_dir = tempfile.mkdtemp(dir="/import/home2/yhchenmath/Dataset/CellSeg/GSE264334_RAW/1")
     for gene_chunk in gene_names_chunks:
         p = mp.Process(target=process_gene_chunk, args=(gene_chunk, df,
                                                              map_height, map_width, temp_dir))
@@ -87,8 +87,12 @@ def get_gene_map(args):
     print("Saved gene map")
 
 def get_10X_segmentation(args):
-    cell_boundaries = pd.read_parquet(args.cell_boundary_10X)
-    nucleus_boundaries = pd.read_parquet(args.nucleus_boundary_10X)
+    if not os.path.exists(args.cell_boundary_10X):
+        print("10X Cell boundary file not found")
+        return
+    else:
+        cell_boundaries = pd.read_parquet(args.cell_boundary_10X)
+        nucleus_boundaries = pd.read_parquet(args.nucleus_boundary_10X)
 
     # Size: equals to gene_map
     gene_map = tifffile.imread(os.path.join(args.out_dir, "gene_map.tif"))
