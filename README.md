@@ -28,7 +28,22 @@ python run.py --gene_map YOUR_PATH/gene_map.tif \  # The gene map is a 3D image 
 ```
 
 
+## Example data
+Here is some processed data of several datasets as examples. You can download the data and run the UCS method on them.
+
+| Dataset                                                                                                                   | Data         | UCS segmentation  result                                                                                            |
+|---------------------------------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------|
+| Xenium Breast Cancer                                                                                                      | [Gene Map](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv), [Nuclei Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv) | [UCS Segmentation Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv) |                                                                                                                    |
+| Xenium human IgAN kidney from Paper "Multiscale topology classifies cells in subcellular spatial transcriptomics", Nature | [Gene Map](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv), [Nuclei Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv)              | [UCS Segmentation Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv)                                                                                                                    |
+| Vizgen Mouse Brain                                                                                                        | [Gene Map](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv), [Nuclei Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv) | [UCS Segmentation Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv) | 
+| One 1200x1200 patch of Stereo-seq                                                                                         | [Gene Map](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv), [Nuclei Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv) |[UCS Segmentation Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv)                                                                                                                     |
+| One FOV of NanoString CosMx Human Pancreas                                                                                | [Gene Map](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv), [Nuclei Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv)              | [UCS Segmentation Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv)                                                                                                                    |
+|
 
 
 ## Downstream analysis
 See `downstream` dir README for examples on how to run downstream analysis to reproduce most of the results in the paper.
+
+
+## Acknowledgements
+Thanks the contributors of [BIDCell](https://github.com/SydneyBioX/BIDCell) for their valuable resources and inspiration.
