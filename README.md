@@ -22,7 +22,9 @@ See `scrips` dir for examples on how to run UCS on Xenium data and Vizgen data.
 Actually, the only things you should provide are the gene map and a nuclei segmentation mask of the same height and width. You can obtain
 the nuclei segmentation either by using Cellpose on DAPI image or directly obtain it from the platform like Vizgen or Xenium.
 
-Note that it is important to make sure the gene map and nuclei mask are aligned correctly. The `check_paired.py` script can be used to check the alignment of the gene map and nuclei mask.
+
+**Note that it is important to make sure the gene map and nuclei mask are aligned correctly. The `check_paired.py` script can be used 
+to check the alignment of the gene map and nuclei mask by visualization.**
 ```bash
 python run.py --gene_map YOUR_PATH/gene_map.tif \  # The gene map is a 3D image with shape (height, width, n_genes)
 --nuclei_mask YOUR_PATH/nuclei_mask.tif \      # The nuclei mask is a 2D image with shape (height, width)
@@ -31,15 +33,17 @@ python run.py --gene_map YOUR_PATH/gene_map.tif \  # The gene map is a 3D image 
 Remember to replace `YOUR_PATH` with the path to your data.
 
 ## Example data
+***To be updated***
+
 Here is some processed data of several datasets as examples. You can download the data and run the UCS method on them.
 
-| Dataset                                                                                                                   | Data         | UCS segmentation  result                                                                                            |
-|---------------------------------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------|
-| Xenium Breast Cancer                                                                                                      | [Gene Map](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv), [Nuclei Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv) | [UCS Segmentation Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv) |                                                                                                                    |
-| Xenium human IgAN kidney from Paper "Multiscale topology classifies cells in subcellular spatial transcriptomics", Nature | [Gene Map](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv), [Nuclei Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv)              | [UCS Segmentation Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv)                                                                                                                    |
-| Vizgen Mouse Brain                                                                                                        | [Gene Map](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv), [Nuclei Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv) | [UCS Segmentation Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv) | 
-| One 1200x1200 patch of Stereo-seq                                                                                         | [Gene Map](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv), [Nuclei Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv) |[UCS Segmentation Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv)                                                                                                                     |
-| One FOV of NanoString CosMx Human Pancreas                                                                                | [Gene Map](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv), [Nuclei Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv)              | [UCS Segmentation Mask](https://hkustconnect-my.sharepoint.com/:u:/g/personal/yyangaj_connect_ust_hk/EQ1Q1Z6Q1QdKv)                                                                                                                    |
+| Dataset                                                                                                                   | Link                                                                                                | Data                                                                                                                |
+|---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| Xenium Breast Cancer                                                                                                      | [Download](https://drive.google.com/drive/folders/1cQ0qVT6tyOu9_O2viHYCvaLXrZILFE2-?usp=drive_link) | Gene Map, Nuclei segmentation mask from 10X, UCS segmentaion, H&E, DAPI, Visualization                              |                                                                                                                    |
+| Xenium human IgAN kidney from Paper "Multiscale topology classifies cells in subcellular spatial transcriptomics", Nature | [Download](https://drive.google.com/drive/folders/1JYp8tIWDKE0N58XZ0FKXhvqv61hRPa-y?usp=drive_link) | Gene Map, Nuclei segmentation mask from Cellpose, UCS segmentation, DAPI                                            |
+| Vizgen Mouse Brain                                                                                                        | [Download](https://drive.google.com/drive/folders/19Bc-3AYILrVW2f9y7VCrWKKBW3NMDA2V?usp=drive_link) | Gene Map, Nuclei segmentation mask from Cellpose, Nuclei segmentation mask from Vizgen, UCS segmentation, DAPI                            | 
+| One 1200x1200 patch of Stereo-seq                                                                                         | [Download](https://drive.google.com/drive/folders/1E2-ya-n9eCMjpZCEzj5qOs0NC_1UD9kh?usp=drive_link) | Gene Map, Nuclei segmentation mask from Cellpose, UCS segmentation, DAPI |
+| One FOV of NanoString CosMx Human Pancreas                                                                                | [Download](https://drive.google.com/drive/folders/1C-FcheVxaHMaH13PSvzdeC65wPIDmZy6?usp=drive_link) | Gene Map, Nuclei segmentation mask from Cellpose, UCS segmentation |
 
 
 ## Downstream analysis

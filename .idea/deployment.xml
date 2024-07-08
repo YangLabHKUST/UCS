@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="yhchenmath@macyang2.math.ust.hk:22 password" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeDeletion="false" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" autoUpload="Always" serverName="macyang3" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false" confirmBeforeDeletion="false" autoUploadExternalChanges="true">
     <option name="confirmBeforeDeletion" value="false" />
+    <option name="confirmBeforeUploading" value="false" />
     <serverData>
+      <paths name="macyang3">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/import/home2/yhchenmath/Code/ucs" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="yhchenmath@macyang2.math.ust.hk:22 password">
         <serverdata>
           <mappings>

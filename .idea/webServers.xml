@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3b5e4a17-eb92-4cd3-ae81-db1c26b71a49" name="macyang3">
+        <fileTransfer accessType="SFTP" host="macyang3.math.ust.hk" port="22" sshConfigId="ca3dee00-d77d-4aa1-b09a-e5468d7eadb8" sshConfig="yhchenmath@macyang3.math.ust.hk:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
