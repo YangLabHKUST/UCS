@@ -45,6 +45,29 @@ Here is some processed data of several datasets as examples. You can download th
 | One 1200x1200 patch of Stereo-seq                                                                                         | [Download](https://drive.google.com/drive/folders/1E2-ya-n9eCMjpZCEzj5qOs0NC_1UD9kh?usp=drive_link) | Gene Map, Nuclei segmentation mask from Cellpose, UCS segmentation, DAPI |
 | One FOV of NanoString CosMx Human Pancreas                                                                                | [Download](https://drive.google.com/drive/folders/1C-FcheVxaHMaH13PSvzdeC65wPIDmZy6?usp=drive_link) | Gene Map, Nuclei segmentation mask from Cellpose, UCS segmentation |
 
+A simple visualization script:
+```python
+import tifffile
+import matplotlib.pyplot as plt
+from skimage.segmentation import find_boundaries
+
+gene_map = tifffile.imread("path/gene_map.tif")
+dapi = tifffile.imread("path/dapi.tif")
+seg_mask = tifffile.imread("path/segmentation_mask.tif")
+
+
+gene_sum = gene_map.sum(axis=2)
+boundary = find_boundaries(seg_mask, mode='inner')
+
+x_min, x_max, y_min, y_max = 0, 1200, 0, 1200
+fig, ax = plt.subplots(1, 1, figsize=(10, 10))
+ax.axis('off')
+# Background: gene or dapi
+# ax.imshow(gene_sum[x_min:x_max, y_min:y_max] > 0, aspect='auto', cmap='Greys')
+ax.imshow(dapi[x_min:x_max, y_min:y_max], aspect='auto', cmap='Greys')
+ax.imshow(boundary[x_min:x_max, y_min:y_max], cmap='Blues', alpha=0.5)
+plt.show()
+```
 
 ## Downstream analysis
 See `downstream` dir README for examples on how to run downstream analysis to reproduce most of the results in the paper.
